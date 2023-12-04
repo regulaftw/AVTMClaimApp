@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+
+
+
+
+.card-text{
+    font-family: "Saria", sans-serif;
+    color: #fff;
+    text-align: "center";
+    line-height: "1.6";
+    font-family: "sans-serif"
+}
+
+
+
+.card{
+    background: rgb(2,0,36, 0.5);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(8,8,117,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.card-header{
+    font-family: "Saria", sans-serif;
+}
+
+.instruction-box {
+    
+    margin: 0 auto; /* Center the box */
+    padding: 20px; /* Padding inside the box */
+    border: 2px solid  #fff; /* Border for the box */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 50%; /* Maximum width */
+    background: radial-gradient(circle, rgba(55,240,255,1) 0%, rgba(8,66,134,1) 50%, rgba(119,1,188,1) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle 3D effect */
+    text-align: center; /* Center text inside the box */
+}
+.list{
+    font-family: "Saria", sans-serif;
+    
+}
+
+
+.readmorebtn {
+    width: 140px;
+    height: 45px;
+    font-family: 'Saria', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: radial-gradient(circle, rgba(55,240,255,1) 0%, rgba(8,66,134,1) 50%, rgba(119,1,188,1) 100%);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+    }
+  
+  .readmorebtn:hover {
+    color: #fff;
+    box-shadow: 0px 15px 20px #574a5e;
+    transform: translateY(-7px);
+    transform: scale(1.1, 1.1);
+    padding:5.5px;
+    border: 4px  #fff solid;
+    text-decoration: none;
+  }
+
+
+  .submitbutton {
+    width: 140px;
+    height: 45px;
+    font-family: 'Saria', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    width: 140px;
+    margin: -5px auto;
+    display: block;
+    
+    }
+  
+  .submitbutton:hover {
+    background-color: #7701BC;
+    box-shadow: 0px 15px 20px rgba(56, 3, 97, 0.4);
+    color: #fff;
+    transform: translateY(7px);
+    
+  }
+
+
+
+  h2 		 { 
+    text-align:center; 
+    margin-bottom:50px; 
+  }
+  h2 small { 
+    font-weight:normal; 
+    color:#888; 
+    display:block; 
+  }
+  .footer 	{ text-align:center; }
+  .footer a  { color:#8CA7C6; }
+  
+  /* form starting stylings ------------------------------- */
+  .group 			  { 
+    position:relative; 
+    margin-bottom:45px; 
+  }
+  input 				{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #5264AE;
+  }
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  label 				 {
+    color:#084286; 
+    font-size:18px;
+    font-family: "Saira", "Sans-serif";
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top:-19px;
+    font-size:14px;
+    color:#fff;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar 	{ position:relative; display:block; width:300px; }
+  .bar:before, .bar:after 	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#084286; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  
+  /* active state */
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#37F0FF; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#37F0FF; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#37F0FF; }
+    to 	{ width:0; background:transparent; }
+  }
+
+.input-container {
+    font-family: "Saira", "sans-serif";
+    margin-top: 25px;
+    display: flex;
+    justify-content: center; /* Align items horizontally at the center */
+    align-items: center; /* Align items vertically at the center */
+}
+
+.group {
+    border: 3px solid #0C55D8
+    ;
+    margin: 0 10px; /* Adjust spacing between input fields */
+    flex-grow: 0; /* Prevent the fields from growing */
+    flex-shrink: 0; /* Prevent the fields from shrinking */
+    flex-basis: auto; /* Set the default size of an element before remaining space is distributed */
+}
+
+
+.relative-container {
+    position: relative;
+  }
+  
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures it stays behind other content */
+  }
+.input-container {
+    
+    font-family: "Saira", "sans-serif";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.group {
+    margin-bottom: 20px; /* Space between form elements */
+}
+
+.group select, .group input {
+    
+    font-family: "Saira", "sans-serif";
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #5264AE;
+    background-color: white;
+    color: #084286;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}
+
+.group select:focus, .group input:focus {
+    cursor: pointer;
+    font-family: "Saira", "sans-serif";
+    outline: none;
+}
+
+
+.eastereggbtn{
+    cursor: help;
+}
+
